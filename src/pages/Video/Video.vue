@@ -1,6 +1,6 @@
 <template>
     <div class="small-videl-detail">
-      <HeadTop title="订单列表"></HeadTop>
+      <HeadTop title="视频"></HeadTop>
         <div class="van_swipe">
             <!--vant van-swipe 滑动组件 -->
            <van-swipe :autoplay="400000" :show-indicators="false" @change="onChange" vertical>
