@@ -93,44 +93,7 @@
     },
     computed: {
       ...mapState(['info', 'ratings']),
-      /*filterRatings () {
-        const ratings = this.ratings
-        if (!ratings) {
-          return []
-        }
-        const {selectType, onlyContent} = this
-        return ratings.filter(rating => {
-          const {rateType, text} = rating
-          /!*
-          selectType: 2, //全部         // rating.rateType(0/1)
-          onlyContent: true // 是否只看有内容的  //rating.text
-           *!/
-          /!*
-          selectType: 0/1/2   如果是0/1需要判断是否与rating.rateType相等, 如果是2就不需要
-          onlyContent: true/false  如果为true需要判断rating.text必须有值, 如果是false就不需要
-           *!/
-          if (selectType === 2) {
-            return !onlyContent || rating.text.length > 0
-          } else {
-            return selectType === rateType && (!onlyContent || rating.text.length > 0)
-          }
-        })
-      }*/
-    },
-    /*methods: {
-      setSelectType (selectType) {
-        this.selectType = selectType
-        this.$nextTick(() => {
-          this.scroll.refresh()
-        })
-      },
-      toggleOnlyContent () {
-        this.onlyContent = !this.onlyContent
-        this.$nextTick(() => {
-          this.scroll.refresh()
-        })
-      }
-    },*/
+    }
   }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">

@@ -21,7 +21,7 @@ module.exports = {
     },
 
     // Various Dev Server settings
-    host: '192.168.43.46', //手机访问改成ip192.168.43.46，原为localhost
+    host: '192.168.79.192', //手机访问改成ip192.168.79.192，原为localhost
     port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,
